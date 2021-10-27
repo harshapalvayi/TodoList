@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_todo.*
 import java.lang.Exception
 import java.util.*
 
@@ -74,7 +73,6 @@ class MainActivity : AppCompatActivity() {
             println(text)
             val listItem: Todo = Todo(text, false)
             todoAdapter.addTodo(listItem)
-//            tvTodoItem.setText(listItem.item)
         }
     }
     private fun speak() {
